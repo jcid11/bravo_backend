@@ -32,7 +32,8 @@ const getProducts = async (req , res) => {
     if (data === undefined) {
       res.status(404).json({ msg: "not found" });
     } else {
-      res.status(200).json(data);
+        console.log(data);
+      res.status(200).json({success:true,data:data});
     }
   };
 
